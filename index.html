@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<form action="submit">
+    <div class="text1"><label >Name <sup>*</sup></label></div>
+
+    <div class="name-field">
+            <div class="name-field-first"><input type="text" required placeholder="First name"></div>
+            <div class="name-field-first"><input type="text" required placeholder="Last name"></div>
+    </div>
+
+    <div class="text1"><label >Email <sup>*</sup></label></div>
+    <div class="email-field">
+        <input type="email" required placeholder="Please enter your email id...">
+    </div>
+    <div class="text1"><label >Your Experince <sup>*</sup></label><br /><label >Overall how would you rate your Experince with us </label></div>
+    
+    <div class="form-group required">
+        <div class="col-sm-12">
+              <div class="star-rating">
+                  <input id="star-5" type="radio" name="rating" value="5" required/>
+                  <label for="star-5" title="5 stars" >★</label>
+                  &nbsp;
+                  <input id="star-4" type="radio" name="rating" value="4" required/>
+                  <label for="star-4" title="4 stars">★</label>
+                  &nbsp;
+                  <input id="star-3" type="radio" name="rating" value="3" required/>
+                  <label for="star-3" title="3 stars">★</label>
+                  &nbsp;
+                  <input id="star-2" type="radio" name="rating" value="2" required/>
+                  <label for="star-2" title="2 stars">★</label>
+                  &nbsp;
+                  <input id="star-1" type="radio" name="rating" value="1" required/>
+                  <label for="star-1" title="1 star">★</label>
+              </div>
+          </div>
+    </div>
+
+    <div class="text2"></div>
+
+    <div class="text1"><label >How satisfied you are with <sup>*</sup></label></div>
+    <p>
+    <div class="tables1">
+        <table class="tab1">
+            <tr>
+                <td></td>
+                <td>Very Unsatisfied</td>
+                <td>Unsatisfied</td>
+                <td>Neutral</td>
+                <td>satisfied</td>
+                <td>Very satisfied</td>
+            </tr>
+            <tr>
+                <td>Purchase</td>
+                <td><input type="radio" name="Purchase" required></td>
+                <td><input type="radio" name="Purchase" required></td>
+                <td><input type="radio" name="Purchase" required></td>
+                <td><input type="radio" name="Purchase" required></td>
+                <td><input type="radio" name="Purchase" required></td>
+            </tr>
+    
+            <tr>
+                <td>Service</td>
+                <td><input type="radio" name="Service" required></td>
+                <td><input type="radio" name="Service" required></td>
+                <td><input type="radio" name="Service" required></td>
+                <td><input type="radio" name="Service" required></td>
+                <td><input type="radio" name="Service" required></td>
+            </tr>
+    
+            <tr>
+                <td>Company Overall </td>
+                <td><input type="radio" name="CompanyOver" required></td>
+                <td><input type="radio" name="CompanyOver" required></td>
+                <td><input type="radio" name="CompanyOver" required></td>
+                <td><input type="radio" name="CompanyOver" required></td>
+                <td><input type="radio" name="CompanyOver" required></td>
+            </tr>
+        </table>
+    </div>
+
+<p></p>
+    <div class="text1"><label >How likely are you to <sup>*</sup></label></div>
+    <p></p>
+    <div class="tables2">
+    <table class="tab2">
+        <tr>
+            <td></td>
+            <td>Very Unlikely</td>
+            <td>Unlikely</td>
+            <td>Neutral</td>
+            <td>Likely</td>
+            <td>Very Likely</td>
+        </tr>
+        <tr>
+            <td>Buy from us again</td>
+            <td><input type="radio" name="Buy" required></td>
+            <td><input type="radio" name="Buy" required></td>
+            <td><input type="radio" name="Buy" required></td>
+            <td><input type="radio" name="Buy" required></td>
+            <td><input type="radio" name="Buy" required></td>
+        </tr>
+
+        <tr>
+            <td>Recomend our Product to others </td>
+            <td><input type="radio" name="Product" required></td>
+            <td><input type="radio" name="Product" required></td>
+            <td><input type="radio" name="Product" required></td>
+            <td><input type="radio" name="Product" required></td>
+            <td><input type="radio" name="Product" required></td>
+        </tr>
+
+        <tr>
+            <td>Recomend our Company to others </td>
+            <td><input type="radio" name="Company" required></td>
+            <td><input type="radio" name="Company" required></td>
+            <td><input type="radio" name="Company" required ></td>
+            <td><input type="radio" name="Company" required ></td>
+            <td><input type="radio" name="Company" required></td>
+        </tr>
+    </table>
+    </div>
+<p></p>
+    <div class="text1"><label >Addition comments or suggestions </div>
+<p></p>
+    <div class="comment">
+        <textarea cols="60" rows="4"></textarea>
+    </div>
+    
+    <button class="btn btn-primary my-3">Submit</button>
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

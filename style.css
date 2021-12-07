@@ -1,0 +1,152 @@
+body {
+  background: #dae2f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d6a4a4,
+    #dae2f8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d6a4a4,
+    #dae2f8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+.text1 {
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.text2 {
+  margin-left: 10px;
+  font-size: 13px;
+  margin-top: 5px;
+}
+sup {
+  color: red;
+}
+
+.name-field {
+  gap: 5px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-fie input {
+  width: 200px;
+}
+
+.email-field {
+  gap: 5px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.name-field-first {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .name-field {
+    flex-direction: row;
+  }
+
+  .email-field > input {
+    width: 360px;
+  }
+}
+
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  padding: 10px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  color: #fff;
+  font-size: 35px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ff5e00;
+}
+
+.tables1 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.tables2 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.tab1 {
+  width: 100%;
+  border: 1px solid #edaa2e;
+  box-shadow: 4px 2px 16px -1px crimson;
+  padding: 24px;
+}
+
+.tab1 tr td:nth-child(1) {
+  text-align: left;
+}
+
+.tab1 tr td {
+  width: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.tab1 tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.tab2 {
+  width: 100%;
+  border: 1px solid #edaa2e;
+  box-shadow: 4px 2px 16px -1px crimson;
+  padding: 24px;
+}
+
+.tab2 tr td:nth-child(1) {
+  text-align: left;
+}
+.tab2 tr td {
+  width: 50px;
+  text-align: center;
+  padding: 8px;
+}
+
+.tab2 tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.comment {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.comment textarea {
+  width: 100%;
+}
+
+button {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
